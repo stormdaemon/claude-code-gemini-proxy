@@ -1,10 +1,12 @@
 src/
 tsconfig.json
-.eslintrc.json
-.prettierrc
+.git/
+.github/
 *.log
+*.md
+!README.md
+examples/
 .env
 .DS_Store
+*.key.json
 node_modules/
-*.test.ts
-*.spec.ts
