@@ -22,7 +22,7 @@ npm install -g claude-code-gemini-proxy
 Or install locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-code-gemini-proxy.git
+git clone https://github.com/stormdaemon/claude-code-gemini-proxy.git
 cd claude-code-gemini-proxy
 npm install
 npm run build
@@ -331,4 +331,4 @@ If this project helps you, consider giving it a star! ⭐
 
 ---
 
-**Made with ❤️ by Droid AI**
+**Made with ❤️ by Droid A    

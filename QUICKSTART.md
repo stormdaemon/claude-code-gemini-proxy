@@ -161,7 +161,7 @@ npx claude-code-gemini-proxy setup
 ## Next Steps
 
 - 📚 Read full [README.md](./README.md)
-- 🐛 [Report issues](https://github.com/YOUR_USERNAME/claude-code-gemini-proxy/issues)
+- 🐛 [Report issues](https://github.com/stormdaemon/claude-code-gemini-proxy/issues)
 - ⭐ Star the repo if it helps!
 
 ---
