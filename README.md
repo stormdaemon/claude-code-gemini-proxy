@@ -114,9 +114,9 @@ If you're already authenticated with gcloud, just choose "gcloud" in the setup.
 
 | Model | Description | Context Window | Best For |
 |-------|-------------|----------------|----------|
-| **gemini-2.0-flash-exp** | Fast & efficient | 1M tokens | Quick responses, code completion |
-| **gemini-2.0-pro-exp** | Balanced performance | 2M tokens | General purpose, complex tasks |
-| **gemini-exp-1206** | Experimental & powerful | 2M tokens | Cutting-edge capabilities |
+| **gemini-2.5-flash** | Best price-performance | 1M tokens | Large-scale processing, low-latency tasks |
+| **gemini-2.5-pro** | Advanced thinking model | 2M tokens | Complex reasoning, large datasets |
+| **gemini-3-pro-preview** | Most intelligent (preview) | 2M tokens | Multimodal understanding, agentic tasks |
 
 ## 🛠️ Configuration
 
@@ -128,7 +128,7 @@ Example configuration:
 {
   "projectId": "my-gcp-project",
   "location": "us-central1",
-  "model": "gemini-2.0-flash-exp",
+  "model": "gemini-2.5-flash",
   "authMethod": "adc",
   "port": 8080
 }

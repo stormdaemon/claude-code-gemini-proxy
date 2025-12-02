@@ -31,16 +31,16 @@ program
           message: 'Choose a Gemini model:',
           choices: [
             {
-              name: `${chalk.yellow('⚡')} Gemini 2.0 Flash - Fast & efficient (recommended)`,
-              value: 'gemini-2.0-flash-exp'
+              name: `${chalk.yellow('⚡')} Gemini 2.5 Flash - Best price-performance (recommended)`,
+              value: 'gemini-2.5-flash'
             },
             {
-              name: `${chalk.blue('💎')} Gemini 2.0 Pro - Balanced performance`,
-              value: 'gemini-2.0-pro-exp'
+              name: `${chalk.blue('💎')} Gemini 2.5 Pro - Advanced thinking & reasoning`,
+              value: 'gemini-2.5-pro'
             },
             {
-              name: `${chalk.magenta('🔬')} Gemini Exp 1206 - Experimental & powerful`,
-              value: 'gemini-exp-1206'
+              name: `${chalk.magenta('🚀')} Gemini 3 Pro Preview - Most intelligent (preview)`,
+              value: 'gemini-3-pro-preview'
             }
           ]
         },

@@ -10,9 +10,9 @@ export interface ProxyConfig {
 }
 
 export type GeminiModel = 
-  | 'gemini-2.0-flash-exp'
-  | 'gemini-2.0-pro-exp' 
-  | 'gemini-exp-1206';
+  | 'gemini-2.5-flash'
+  | 'gemini-2.5-pro' 
+  | 'gemini-3-pro-preview';
 
 export interface ModelInfo {
   name: string;

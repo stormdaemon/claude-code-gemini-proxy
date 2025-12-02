@@ -4,33 +4,33 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export const MODELS: Record<GeminiModel, ModelInfo> = {
-  'gemini-2.0-flash-exp': {
-    name: 'gemini-2.0-flash-exp',
-    displayName: 'Gemini 2.0 Flash',
+  'gemini-2.5-flash': {
+    name: 'gemini-2.5-flash',
+    displayName: 'Gemini 2.5 Flash',
     contextWindow: 1048576,
     maxOutputTokens: 8192,
-    description: 'Fast and efficient model, best for quick responses'
+    description: 'Best price-performance for large-scale processing and low-latency tasks'
   },
-  'gemini-2.0-pro-exp': {
-    name: 'gemini-2.0-pro-exp',
-    displayName: 'Gemini 2.0 Pro',
+  'gemini-2.5-pro': {
+    name: 'gemini-2.5-pro',
+    displayName: 'Gemini 2.5 Pro',
     contextWindow: 2097152,
     maxOutputTokens: 8192,
-    description: 'Balanced performance and quality'
+    description: 'Advanced thinking model for complex reasoning and large datasets'
   },
-  'gemini-exp-1206': {
-    name: 'gemini-exp-1206',
-    displayName: 'Gemini Exp 1206',
+  'gemini-3-pro-preview': {
+    name: 'gemini-3-pro-preview',
+    displayName: 'Gemini 3 Pro Preview',
     contextWindow: 2097152,
     maxOutputTokens: 8192,
-    description: 'Experimental model with cutting-edge capabilities'
+    description: 'Most intelligent model for multimodal understanding and agentic tasks'
   }
 };
 
 export const DEFAULT_CONFIG: Partial<ProxyConfig> = {
   port: 8080,
   location: 'us-central1',
-  model: 'gemini-2.0-flash-exp',
+  model: 'gemini-2.5-flash',
   authMethod: 'adc'
 };
 
