@@ -1,8 +1,8 @@
 import Fastify, { FastifyReply, FastifyRequest } from 'fastify';
 import cors from '@fastify/cors';
-import { GeminiClient } from './gemini-client';
-import { ApiTranslator } from './translator';
-import { ProxyConfig, AnthropicRequest } from './types';
+import { GeminiClient } from './gemini-client.js';
+import { ApiTranslator } from './translator.js';
+import { ProxyConfig, AnthropicRequest } from './types.js';
 import { randomBytes } from 'crypto';
 
 export class ProxyServer {

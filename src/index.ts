@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { ProxyServer } from './server';
-import { configManager } from './config';
+import { ProxyServer } from './server.js';
+import { configManager } from './config.js';
 
 async function main() {
   const config = configManager.get();

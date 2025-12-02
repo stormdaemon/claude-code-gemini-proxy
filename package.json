@@ -1,6 +1,6 @@
 {
   "name": "claude-code-gemini-proxy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Use Google Gemini models in Claude Code via Vertex AI - A transparent proxy that replaces Claude with Gemini",
   "type": "module",
   "main": "dist/index.js",

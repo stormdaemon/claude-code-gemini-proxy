@@ -1,5 +1,5 @@
 import Conf from 'conf';
-import { ProxyConfig, GeminiModel, ModelInfo } from './types';
+import { ProxyConfig, GeminiModel, ModelInfo } from './types.js';
 import * as fs from 'fs';
 import * as path from 'path';
 

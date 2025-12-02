@@ -1,6 +1,6 @@
-import { AuthManager } from './auth';
-import { ProxyConfig, GeminiRequest, GeminiResponse } from './types';
-import { MODELS } from './config';
+import { AuthManager } from './auth.js';
+import { ProxyConfig, GeminiRequest, GeminiResponse } from './types.js';
+import { MODELS } from './config.js';
 
 export class GeminiClient {
   private config: ProxyConfig;

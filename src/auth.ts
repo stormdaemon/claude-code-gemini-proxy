@@ -1,6 +1,6 @@
 import { GoogleAuth } from 'google-auth-library';
 import * as fs from 'fs';
-import { ProxyConfig } from './types';
+import { ProxyConfig } from './types.js';
 
 export class AuthManager {
   private auth: GoogleAuth;

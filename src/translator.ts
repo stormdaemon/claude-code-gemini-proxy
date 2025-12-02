@@ -5,7 +5,7 @@ import {
   GeminiRequest, 
   GeminiResponse,
   GeminiContent 
-} from './types';
+} from './types.js';
 
 /**
  * Translates Anthropic API requests to Gemini API format
