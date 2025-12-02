@@ -321,9 +321,9 @@ Built with:
 
 ## 🆘 Support
 
-- 🐛 [Report a bug](https://github.com/YOUR_USERNAME/claude-code-gemini-proxy/issues)
-- 💡 [Request a feature](https://github.com/YOUR_USERNAME/claude-code-gemini-proxy/issues)
-- 💬 [Ask a question](https://github.com/YOUR_USERNAME/claude-code-gemini-proxy/discussions)
+- 🐛 [Report a bug](https://github.com/stormdaemon/claude-code-gemini-proxy/issues)
+- 💡 [Request a feature](https://github.com/stormdaemon/claude-code-gemini-proxy/issues)
+- 💬 [Ask a question](https://github.com/stormdaemon/claude-code-gemini-proxy/discussions)
 
 ## ⭐ Star History
 
@@ -331,4 +331,4 @@ If this project helps you, consider giving it a star! ⭐
 
 ---
 
-**Made with ❤️ by Droid A    
+**Made with ❤️ by Droid AI**
