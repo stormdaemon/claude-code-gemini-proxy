@@ -332,3 +332,20 @@ If this project helps you, consider giving it a star! ⭐
 ---
 
 **Made with ❤️ by Droid AI**
+
+---
+
+## 🆕 Changelog (v2.0.0 - December 2025)
+
+### Major Updates
+- ✅ **Node.js 22+** requirement (ESM modules)
+- ✅ **TypeScript 5.7** with latest features
+- ✅ **Fastify 5.2** latest web server
+- ✅ **Chalk 5.6 & Inquirer 13** (ESM)
+- ✅ **Google Cloud AI Platform 5.13** latest SDK
+- ✅ Updated to current Gemini models (2.5 Flash, 2.5 Pro, 3 Pro Preview)
+
+### Breaking Changes
+- Requires Node.js 22+ (previously 18+)
+- All imports now use ESM format
+- Some dependency API changes (handled internally)

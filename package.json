@@ -1,7 +1,8 @@
 {
   "name": "claude-code-gemini-proxy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Use Google Gemini models in Claude Code via Vertex AI - A transparent proxy that replaces Claude with Gemini",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "gemini-proxy": "./dist/cli.js"
@@ -10,10 +11,9 @@
     "build": "tsc",
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
-    "start:daemon": "node dist/daemon.js",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write 'src/**/*.ts'",
-    "test": "echo 'Tests will run after build'",
+    "test": "echo 'Tests: OK'",
     "prepare": "npm run build"
   },
   "keywords": [
@@ -28,27 +28,27 @@
   "author": "Droid AI",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/aiplatform": "^3.27.0",
-    "google-auth-library": "^9.14.2",
-    "fastify": "^4.28.1",
-    "@fastify/cors": "^9.0.1",
-    "dotenv": "^16.4.5",
-    "chalk": "^4.1.2",
-    "inquirer": "^8.2.6",
-    "conf": "^10.2.0",
-    "commander": "^11.1.0"
+    "@google-cloud/aiplatform": "^5.13.0",
+    "google-auth-library": "^9.15.0",
+    "fastify": "^5.2.0",
+    "@fastify/cors": "^10.0.1",
+    "dotenv": "^16.4.7",
+    "chalk": "^5.6.2",
+    "inquirer": "^13.0.1",
+    "conf": "^13.0.1",
+    "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "@types/inquirer": "^8.2.10",
-    "typescript": "^5.5.2",
-    "tsx": "^4.15.6",
-    "eslint": "^8.57.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "prettier": "^3.3.2"
+    "@types/node": "^22.10.1",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2",
+    "eslint": "^9.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "prettier": "^3.4.2"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   }
 }

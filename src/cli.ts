@@ -2,19 +2,18 @@
 import { Command } from 'commander';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-import { configManager, MODELS } from './config';
-import { AuthManager } from './auth';
-import { ProxyConfig, GeminiModel } from './types';
-import { ProxyServer } from './server';
+import { configManager, MODELS } from './config.js';
+import { AuthManager } from './auth.js';
+import type { ProxyConfig, GeminiModel } from './types.js';
+import { ProxyServer } from './server.js';
 import * as fs from 'fs';
-import * as path from 'path';
 
 const program = new Command();
 
 program
   .name('gemini-proxy')
   .description('Use Google Gemini in Claude Code via Vertex AI')
-  .version('1.0.0');
+  .version('2.0.0');
 
 // Setup command
 program
@@ -63,8 +62,8 @@ program
           type: 'input',
           name: 'serviceAccountPath',
           message: 'Path to service account JSON file:',
-          when: (answers) => answers.authMethod === 'service-account',
-          validate: (input) => {
+          when: (answers: any) => answers.authMethod === 'service-account',
+          validate: (input: string) => {
             if (!input) return 'Path is required';
             const expandedPath = input.replace(/^~/, process.env.HOME || '');
             if (!fs.existsSync(expandedPath)) {
@@ -80,7 +79,7 @@ program
           type: 'input',
           name: 'projectId',
           message: 'GCP Project ID:',
-          validate: (input) => input ? true : 'Project ID is required'
+          validate: (input: string) => input ? true : 'Project ID is required'
         },
         {
           type: 'list',
@@ -149,11 +148,7 @@ program
       }
 
     } catch (error: any) {
-      if (error.isTtyError) {
-        console.error(chalk.red('Prompt couldn\'t be rendered in this environment'));
-      } else {
-        console.error(chalk.red(`Error: ${error.message}`));
-      }
+      console.error(chalk.red(`Error: ${error.message}`));
       process.exit(1);
     }
   });
